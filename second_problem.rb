@@ -1,10 +1,8 @@
 require "selenium-webdriver"
 require 'logger'
-require 'test/unit'
 
-extend Test::Unit::Assertions
 
-Selenium::WebDriver::Chrome.driver_path="/Users/kai/Documents/chromedriver"
+Selenium::WebDriver::Chrome.driver_path="/path/to/chromedriver"
 wait = Selenium::WebDriver::Wait.new(timeout: 10)
 
 
@@ -34,8 +32,6 @@ else
 end
 
 
-logger.info("Clicked on Login")
-
 username_field = wait.until { driver.find_element(name: 'session[username_or_email]') }
 username_field.send_keys username
 logger.info("Typed #{username}")
@@ -48,6 +44,9 @@ login_button = wait.until { driver.find_element(xpath: '//input[@value="Log in"]
 login_button.click
 logger.info("Clicked on Login button")
 
+# dont have an account with twitter or facebook
+# but logic is to verify that user successfully loged in by locating unique element for home page
+# then post 'Hello world' and verify text present on the page
 
 
 driver.quit()

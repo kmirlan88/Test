@@ -4,7 +4,7 @@ require 'test/unit'
 
 extend Test::Unit::Assertions
 
-Selenium::WebDriver::Chrome.driver_path="/Users/kai/Documents/chromedriver"
+Selenium::WebDriver::Chrome.driver_path="/path/to/chromedriver"
 wait = Selenium::WebDriver::Wait.new(timeout: 10)
 
 
@@ -25,7 +25,7 @@ driver.manage.window.maximize
 
 driver.navigate.to page_url
 
-if driver.title.include? "RubyGems.org"
+if driver.title.include? "gem host"
 	logger.info("Successfully opened #{page_url}")
 else
 	logger.error("Not able to open #{page_url}")
@@ -49,6 +49,8 @@ runtime_dependencies_el = wait.until { driver.find_element(id: "runtime_dependen
 deps = runtime_dependencies_el.text
 logger.info("Runtime dependencies: \n#{deps}")
 
+
+#just a custom verify logic in order to test if expected text is there
 begin
 	assert_match /columnize/, deps
 	assert_match /linecache19/, deps
