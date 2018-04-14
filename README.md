@@ -1,6 +1,6 @@
 ## Output looks like this:
 ```
-Mirlans-MacBook-Pro:Test kai$ rspec first_problem.rb 
+Mirlans-MacBook-Pro:Test kai$ rspec both_tasks.rb 
 I, [2018-04-13 19:46:48#22439]  INFO -- : Initializing Chrome
 I, [2018-04-13 19:46:49#22439]  INFO -- : Maximizing browser window
 I, [2018-04-13 19:46:50#22439]  INFO -- : Test Started
