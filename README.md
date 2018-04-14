@@ -1,4 +1,4 @@
-# Output looks like this:
+## Output looks like this:
 ```
 Mirlans-MacBook-Pro:Test kai$ rspec first_problem.rb 
 I, [2018-04-13 19:46:48#22439]  INFO -- : Initializing Chrome
