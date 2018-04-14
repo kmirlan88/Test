@@ -15,8 +15,8 @@ ruby-debug-base19 >= 0.11.19
 I, [2018-04-13 19:46:52#22439]  INFO -- : Names of the authors: 
 Kent Sibilev, Mark Moseley
 .I, [2018-04-13 19:46:52#22439]  INFO -- : Test Started
-I, [2018-04-13 19:46:53#22439]  INFO -- : Typed pycharmce
-I, [2018-04-13 19:46:53#22439]  INFO -- : Typed yesican
+I, [2018-04-13 19:46:53#22439]  INFO -- : Typed username
+I, [2018-04-13 19:46:53#22439]  INFO -- : Typed password
 I, [2018-04-13 19:46:54#22439]  INFO -- : Clicked on Login button
 I, [2018-04-13 19:46:55#22439]  INFO -- : Sucessfully Loged In
 .
